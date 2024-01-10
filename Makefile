@@ -7,7 +7,7 @@ all:$(C_EXECUTABLE)
 
 $(C_EXECUTABLE): % : %.c
 	@echo "$<"
-	$(CC) $< $(LDFLAGS) -lsystemd $(CFLAGS) -o $@
+	$(CC) $< $(LDFLAGS) $(CFLAGS) -o $@
 
 
 clean:
